@@ -1,0 +1,385 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+
+}
+
+
+
+  
+
+
+body {
+	background-color:#5168e7; 
+	
+	
+}
+
+
+#container {
+	
+	width: 900px;
+	margin: auto;
+	position: relative;
+
+}
+
+h1{
+	position: fixed;
+	font-size: 7em;
+	left: 300px;
+	top: 10px;
+	color: rgb(207, 223, 246);
+	text-shadow: 4px 4px gainsboro;
+	text-shadow: 2px 2px rgb(56, 34, 128);
+	 
+}
+
+h2{
+	color:rgb(78, 160, 237);
+	font-size: 10em;
+	position: fixed;
+	right: -150px;
+	top: 100px;
+	text-shadow: 3px 3px rgb(25, 49, 106);
+	rotate: -90deg;
+}
+
+h3{
+color:  rgb(103, 184, 207);	
+top: 400px;
+bottom: 100px;
+left: -200px;
+ position: fixed;
+ font-size: 8em;
+ text-shadow: 2px 2px rgb(250, 240, 240);
+ rotate: 90deg;
+ 
+
+}
+h4{
+Color: rgb(6, 32, 116); 
+position: fixed;
+font-size: 9em;
+right: 200px;
+top: 200px;
+rotate: -60deg;
+text-shadow: 2px 2px rgb(148, 189, 237);
+}
+
+h5{
+	color: rgba(8, 56, 114, 0.626);
+	font-size: 8em;
+	position: fixed;
+	right: -50px;
+	top: 400px;
+	
+	rotate: -30deg;
+}
+
+h6{ 
+color: rgb(9, 27, 142);
+font-size: 11em;
+position: absolute;
+top: -300px;
+left: 800px;
+}
+p{
+	color:rgb(30, 35, 92);
+	font-size: 4em;
+
+}
+
+
+
+body {
+	padding: 5em;
+  }
+  .bar {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 32px;
+	margin: 0 12px;
+	margin-bottom: 48px;
+	width: 2px;
+	border-right: 1px solid black;
+  }
+  .debug .bar {
+	outline: 1px solid rgba(134, 141, 235, 0.1);
+  }
+  .bar.double,
+  .bar.end {
+	border-left: 1px solid black;
+  }
+  .bar.end {
+	float: right;
+	border-right-width: 4px;
+	margin-right: 0;
+  }
+  .staff {
+	font-size: 0;
+	background-image: linear-gradient(180deg, #999 0, #999 1px, transparent 1px, transparent 8px, #999 8px, #999 9px, transparent 9px, transparent 16px, #999 16px, #999 17px, transparent 17px, transparent 24px, #999 24px, #999 25px, transparent 25px, transparent 32px, #999 32px, #999 33px, transparent 33px);
+	background-size: 100% 80px;
+  }
+  .staff.debug {
+	background-color: rgba(0, 255, 0, 0.1);
+  }
+  .note {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 32px;
+	margin: 0 12px;
+	margin-bottom: 48px;
+  }
+  .debug .note {
+	outline: 1px solid rgba(255, 0, 0, 0.1);
+  }
+  .note::before {
+	height: 8px;
+	width: 12px;
+  }
+  .whole.note::before {
+	position: absolute;
+	content: "";
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-left-width: 4px;
+	border-right-width: 4px;
+	border-radius: 50%;
+  }
+  .half.note::after,
+  .quarter.note::after {
+	content: "";
+	height: 28px;
+	width: 1px;
+	background-color: black;
+	position: absolute;
+	top: -24px;
+	right: 0;
+  }
+  .half.note::before,
+  .quarter.note::before {
+	position: absolute;
+	content: "";
+	transform: rotatez(-15deg);
+	border-radius: 50%;
+  }
+  .half.note::before {
+	box-sizing: border-box;
+	border: 1px solid black;
+	border-top-width: 2.18181818px;
+	border-bottom-width: 2.18181818px;
+  }
+  .quarter.note::before {
+	background-color: black;
+  }
+  .note.d4 {
+	top: 32px;
+  }
+  .note.e4 {
+	top: 28px;
+  }
+  .note.f4 {
+	top: 24px;
+  }
+  .note.g4 {
+	top: 20px;
+  }
+  .note.a5 {
+	top: 16px;
+  }
+  .note.b5 {
+	top: 12px;
+  }
+  .note.c5 {
+	top: 8px;
+  }
+  .note.d5 {
+	top: 4px;
+  }
+  .note.e5 {
+	top: 0px;
+  }
+  .note.f5 {
+	top: -4px;
+  }
+  .note.g5 {
+	top: -8px;
+  }
+  .quarter.note.d5::after,
+  .half.note.d5::after,
+  .quarter.note.e5::after,
+  .half.note.e5::after,
+  .quarter.note.f5::after,
+  .half.note.f5::after,
+  .quarter.note.g5::after,
+  .half.note.g5::after {
+	top: 4px;
+  }
+  
+  
+.teddy {
+	font-size: calc(50vmin / 260);
+	position: relative;
+	margin: auto;
+	width: 260em;
+	height: 330em;
+}
+.teddy div {
+	position: absolute;
+}
+.right-ear, .left-ear, .head, .right-eye, .left-eye, .mouth-area, .nose, .nose-inner, .right-cheek, .left-cheek, .body, .paw, .foot {
+	border-radius: 50%;
+}
+.right-ear, .left-ear {
+	background: rgb(95,60,30);
+	box-shadow: 0 0 0 20em rgb(190,120,60) inset;
+	width: 80em;
+	height: 80em;
+}
+.right-ear {
+	left: 30em;
+}
+.left-ear {
+	right: 30em;
+}
+.head {
+	background: rgb(190,120,60);
+	width: 160em;
+	height: 160em;
+	right: 0;
+	left: 0;
+	margin: auto;
+	z-index: 1;
+}
+.right-eye, .left-eye, .nose-inner {
+	background: rgb(255, 255, 255);
+}
+.right-eye, .left-eye {
+	box-shadow: 2em -2em 0 8em inset;
+	top: 65em;
+	width: 20em;
+	height: 20em;
+}
+.right-eye {
+	left: 45em;
+}
+.left-eye {
+	right: 45em;
+}
+.mouth-area {
+	background: rgb(230,160,90);
+	right: 0;
+	bottom: 5em;
+	left: 0;
+	margin: auto;
+	width: 100em;
+	height: 70em;
+}
+.nose {
+	background: rgb(0,0,0);
+	top: 15em;
+	right: 0;
+	left: 0;
+	margin: auto;
+	width: 40em;
+	height: 30em;
+}
+.nose-inner {
+	top: 3em;
+	right: 8em;
+	width: 10em;
+	height: 8em;
+}
+.right-cheek, .left-cheek {
+	bottom: 10em;
+	width: 30em;
+	height: 30em;
+}
+.right-cheek {
+	box-shadow: -2em -2em 0 0 rgb(115,80,45) inset;
+	left: 20em;
+}
+.left-cheek {
+	box-shadow: 2em -2em 0 0 rgb(115,80,45) inset;
+	right: 20em;
+}
+.body {
+	background: rgb(230,160,90);
+	box-shadow: 0 0 0 24em rgb(190,120,60) inset;
+	margin: auto;
+	right: 0;
+	bottom: 22em;
+	left: 0;
+	width: 170em;
+	height: 190em;
+}
+.right-arm, .left-arm {
+	background: rgb(170,100,50);
+	top: 130em;
+	width: 70em;
+	height: 60em;
+}
+.right-arm {
+	border-radius: 70em 0 0 0 / 60em 0 0 0;
+	left: 0;
+}
+.right-arm .arm-inner {
+	border-radius: 50em 0 0 0 / 80em 0 0 0;
+	box-shadow: 22em 22em 0 0 rgb(170,100,50) inset;
+	left: 55em;
+}
+.left-arm, .left-arm .paw {
+	right: 0;
+}
+.left-arm {
+	border-radius: 0 70em 0 0 / 0 60em 0 0;
+}
+.left-arm .arm-inner {
+	border-radius: 0 50em 0 0 / 0 80em 0 0;
+	box-shadow: -22em 22em 0 0 rgb(170,100,50) inset;
+	right: 55em;
+}
+.arm-inner {
+	width: 50em;
+	height: 80em;
+	bottom: 0;
+}
+.paw {
+	background: rgb(190,120,60);
+	width: 80em;
+	height: 60em;
+	top: 30em;
+}
+.right-leg, .left-leg {
+	background: rgb(170,100,50);
+	border-radius: 45em 45em 0 0 / 70em 70em 0 0;
+	bottom: 40em;
+	width: 90em;
+	height: 70em;
+}
+.right-leg  {
+	left: 10em;
+}
+.left-leg  {
+	right: 10em;
+}
+.foot  {
+	background: rgb(230,160,90);
+	box-shadow: 0 5em 0 10em rgb(190,120,60) inset;
+	width: 100%;
+	height: 80em;
+	top: 30em;
+}
+
