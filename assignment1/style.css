@@ -1,7 +1,7 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
 	margin:0px;
-	padding:0px;
+	padding:50px;
 	height:100%;
 }
 
@@ -18,7 +18,7 @@ body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	Background: rgb(243,245,130);
 	color: rgb(107,69,16);
-	margin: #px;
+	margin: 20px;
 
 }
 
@@ -33,7 +33,7 @@ body {
 }
 
 ul { 
-list-style: none;
+list-style: bullet;
 padding-left: 0px;
 }
 
