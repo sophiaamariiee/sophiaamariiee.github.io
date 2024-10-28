@@ -1,0 +1,127 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+	font-family:'permanent Marker';
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+body {
+	background: #e8fcfc;
+	color: #8f9e9e;
+	
+}
+
+
+figure {
+	display:none;
+}
+
+
+main {
+	padding:15px;
+}
+
+header {
+	background:#a30f0f;
+	padding: 10px;
+}
+
+h1 {
+	font-size: 4em;
+	line-height:1em;
+}
+
+main header {
+	background: none;
+}
+
+main h1 {
+	font-size: 2.25em;
+}
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+#container {
+	max-width:12000px;
+	width:auto;
+}
+body{
+}
+
+header {
+	
+}
+
+
+
+main {
+	width:85%;
+	margin: auto;
+}
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	 h1{
+		color: rgb(185, 32, 32);
+	 }
+	
+	figure {
+		display:block;
+	}
+header {
+	background: none;
+}
+
+
+	div#container>header h1 {
+		color: rgb(185, 32, 32);
+	}
+	
+	
+	section#something {
+float:left;
+width: 45%;
+	}
+
+	section#Anotherthing {
+		float:right;
+		width: 40%;
+
+	
+	}
+
+	footer{
+		clear:both;
+	}
+
+} /* closes 1024px+ */
+
+
+
