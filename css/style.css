@@ -1,7 +1,7 @@
 /* Basic CSS resets -- leveling slight inconsistencies in browsers */
 html, body {
-	margin:0px;
-	padding:0px;
+	margin:20px;
+	padding:20px;
 	height:100%;
 }
 
@@ -33,8 +33,8 @@ body {
 }
 
 ul { 
-list-style: none;
-padding-left: 0px;
+list-style: bullet;
+padding-left: 20px;
 }
 
 a{
