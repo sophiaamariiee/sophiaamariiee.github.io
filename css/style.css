@@ -11,7 +11,13 @@ html {
     line-height: 1.4em;
 }
 
+h1 {
+	padding:20px;
+}
 
+h2 {
+	paddin: 20px;
+}
 
 
 body {
@@ -33,7 +39,7 @@ body {
 }
 
 ul { 
-list-style: bullet;
+list-style: bullet point;
 padding-left: 20px;
 }
 
@@ -44,7 +50,7 @@ color:rgb(240,165,234);
 	color: rgb(237,31,220);
  }
 figure {
-	margin: 0px;
+	margin: 20px;
 }
 figure img{
 	width:100%;
