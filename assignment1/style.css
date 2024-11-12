@@ -19,7 +19,7 @@ body {
 	Background: rgb(243,245,130);
 	color: rgb(107,69,16);
 	margin: 20px;
-	padding:20px;
+	padding: 10px;
 
 }
 
@@ -35,7 +35,7 @@ body {
 
 ul { 
 list-style: bullet;
-padding-left: 0px;
+padding-left: 10px;
 }
 
 a{
