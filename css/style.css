@@ -16,7 +16,7 @@ h1 {
 }
 
 h2 {
-	paddin: 20px;
+	padding: 20px;
 }
 
 
@@ -24,7 +24,7 @@ body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	Background: rgb(243,245,130);
 	color: rgb(107,69,16);
-	margin: #px;
+	margin: 0px;
 
 }
 
@@ -40,7 +40,7 @@ body {
 
 ul { 
 list-style: bullet point;
-padding-left: 20px;
+padding: 20px;
 }
 
 a{
