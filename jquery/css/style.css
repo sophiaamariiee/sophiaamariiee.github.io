@@ -1,0 +1,111 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+	font-family:"doto";
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+	
+}
+
+header {
+	padding:10px;
+	text-align: center;
+}
+
+figcaption {
+	text-align: center;
+	font-size: 1.2em;
+}
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	background: rgb(243, 218, 238);
+width:fit-content;
+	margin:auto;
+}
+
+
+#content {
+	padding: 10px;
+	font-family: "doto";
+	background: rgb(202, 202, 236);
+
+}
+
+#container {
+	margin:auto;	
+	background: rgb(202, 202, 236);
+	
+}
+
+jquery {
+	max-width:min-content;
+	object-fit: scale-down;
+}
+
+button {
+	border-radius: 80%;
+	padding:20px;
+	width:80px;
+	text-align: center;
+	box-align:center;
+}
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	.jquery{
+		max-width: fit-content;
+	}
+	
+	button {
+	border-radius: 10%;
+	background: pink;
+	padding: 20px;
+	margin-left: 2em;
+	float:left;
+	}
+	
+	#content {
+		display: flex;
+		flex-direction: row;
+		padding: 25px;
+	}
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	button {
+	
+		border-radius: 90%;
+		background: rgb(192, 228, 255);
+	
+		
+		}
+	
+	
+} /* closes 1024px+ */
+
+
+
