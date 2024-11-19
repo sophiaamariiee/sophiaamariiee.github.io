@@ -12,7 +12,9 @@ html {
 }
 
 
-
+header {
+	font-size:2em;
+	line-height:1em;
 
 body {
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
