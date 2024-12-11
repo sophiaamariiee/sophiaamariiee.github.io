@@ -1,0 +1,312 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+}
+
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+body {
+    max-width: auto;
+	background-color: #f5f5c7; /* Pastel yellow */
+	font-family: Arial, sans-serif;
+	color: #333;
+    height:auto;
+}
+
+.site-footer {
+    background-color: #c6f0fa; /* Match your site's pastel yellow theme */
+    color: #333; /* Text color */
+    text-align: center; /* Center the text */
+    padding: 10px; /* Add spacing */
+    font-size: 0.9em; /* Slightly smaller font size */
+    border-top: 1px solid #ccc; /* Optional: Border to separate footer */
+    transform:rotate(-2deg);
+    position: relative; /* Keeps footer flow in document */
+}
+
+.erfilogo {
+    width: 80px; /* Default size for smaller screens */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.caption {
+    text-align: center; /* Center-align the text */
+    font-size: 14px;    /* Adjust the size if needed */
+    margin-top: 10px;   /* Add some spacing above the caption */
+    color: #333;        /* Optional: Set the text color */
+}
+
+
+.p {
+    transform: rotate(-1deg);
+}
+/*general styles*/
+
+
+#container {
+    max-width: 100%; /* Adjust container to take full width on smaller screens */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Add padding inside the container */
+    background-color: #c6f0fa;/* Background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    transform: rotate(-1deg); /* Slight tilt */
+    box-sizing: border-box; /* Ensure padding doesn't affect overall width */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+header {
+    padding: 10px;
+    background: #c6f0fa;
+    display: flex;
+    align-items: center; 
+    position: relative; 
+    
+    transform: rotate(-2deg); 
+    margin-top: 0;
+}
+
+
+
+
+nav ul {
+    display: flex; 
+    justify-content: space-around;
+    align-items: center; 
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+   
+}
+
+
+nav ul li {
+    margin-right: 5px; 
+}
+
+nav ul li a img {
+    width: 100px; 
+    height: auto;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    transform: rotate(-1deg); /* Slight tilt effect */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    transform: rotate(-1deg);
+    padding: 10px;;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    font-size: 0.9em;
+}
+
+
+.music-room-image {
+    width: 100%; /* Ensure the image scales to fit the container */
+    height: auto; /* Maintain the image's aspect ratio */
+    max-width: 100%; /* Prevent the image from exceeding the container's width */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Ensure the image is treated as a block element */
+}
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+
+@media (max-width: 600px) { 
+    
+.music-room-image {
+    
+    height:auto;
+width:50%;   
+}
+ .listentomusic {
+    height:auto;
+    max-width: 100%; /* Optional: Limit the maximum size */
+
+    }
+	#container {
+        max-width: 100%; /* Adjust the container width to fit smaller screens */
+        padding: 10px; /* Reduce padding for smaller devices */
+		transform: rotate(-1deg);
+        height:auto;
+    }
+    nav ul {
+        display: flex; /* Keep the icons in a row */
+        justify-content: center; /* Center icons horizontally */
+        align-items: center; /* Center icons vertically */
+        padding: 0; /* Remove any padding */
+        margin: 0; /* Remove any margin */
+        flex-wrap: wrap; /* Allow items to wrap onto the next line if necessary */
+
+    
+    }
+  
+    nav ul li {
+        margin-right: 1px; /* Space between icons */
+        margin-bottom: 0; /* Ensure no vertical margin */
+    }
+
+    nav ul li a img {
+        width: 70px; /* Icon size */
+        height: auto;
+    }
+
+    header {
+        display: flex; /* Flexbox layout */
+        align-items: center; /* Center items vertically */
+        position:relative;
+        width: 100%; /* Make sure header spans full width */
+        padding: 0px; /* Reset padding */
+        margin: 0; /* Remove margin */
+        transform: rotate(-2deg); /* Keep the rotation */
+        box-sizing: border-box; /* Prevent box-sizing issues */
+    }
+
+    h1, h2 {
+        font-size: 1.2em; /* Adjust text size to make it fit better */
+        text-align: left;
+        margin: 0;
+    }
+
+    .erfilogo {
+        width: 150px; /* Slightly larger logo for tablets */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    #headai {
+width:auto
+    }
+}
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+
+    .Made-By-Me {
+        text-align: right;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end; /* Push icons to the right */
+        align-items: center;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        gap: 10px; /* Add spacing between icons */
+    }
+	
+		nav ul li {
+			margin-right: 30px;
+            height: auto;
+		}
+        nav ul li a img {
+            width: 100px; 
+            height: auto;
+        }
+		.efrilogo {
+			width: 100px;
+		}
+
+        #container {
+            max-width: 768px; /* Adjust container size for tablets */
+            padding: 20px; /* Add more padding */
+        }
+        .music-room-image {
+            width: 100%; /* Ensure the image scales to fit the container */
+            height: auto; /* Maintain the image's aspect ratio */
+            max-width: 100%; /* Prevent the image from exceeding the container's width */
+            margin: 0 auto; /* Center the image */
+            display: block; /* Ensure the image is treated as a block element */
+        }
+
+        header {
+            display: flex;
+            align-items: center; /* Center items vertically */
+            justify-content: space-between; /* Space items apart horizontally */
+            width: 100%; /* Full width */
+            background: #c6f0fa; /* Ensure the header has a clear background */
+            padding: 10px 20px; /* Add inner padding */
+            box-sizing: border-box; /* Ensure padding is included in width */
+            transform: rotate(-2deg);
+            overflow: hidden; /* Prevent content overflow */
+        }
+	}
+	
+	
+ /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+    #container {
+        max-width: 1024px; /* Adjust container size for desktop screens */
+        padding: 30px; /* Add even more padding */
+    }
+    .music-room-image {
+        max-width: 70%; /* Scale image proportionally for desktop */
+        margin: 0 auto; /* Center the image */
+    }
+	nav ul li a img {
+        width: 100px; 
+        height: auto;
+        max-width: 90%;
+    }
+    .erfilogo {
+        width: 200px; /* Larger logo for desktops */
+        height: auto; /* Maintain aspect ratio */
+    }
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Push icons to the right */
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px; /* Add spacing between icons */
+}
+    header {
+        display: flex;
+        align-items: center; /* Center items vertically */
+        justify-content: space-between; /* Space items apart horizontally */
+        width: 100%; /* Full width */
+        background: #c6f0fa; /* Ensure the header has a clear background */
+        padding: 10px 20px; /* Add inner padding */
+        box-sizing: border-box; /* Ensure padding is included in width */
+        transform: rotate(-2deg);
+        overflow: hidden; /* Prevent content overflow */
+
+} 
+
+}/* closes 1024px+ */
+
+
+
